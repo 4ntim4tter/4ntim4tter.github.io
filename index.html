@@ -19,7 +19,7 @@
         integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous">
         </script>
 
-<!--     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <!--     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
     <script type="text/javascript" defer>
         function renderTurnstileWidget() {
             // Get all elements with the class 'cf-turnstile'
@@ -44,12 +44,22 @@
 </head>
 
 <header>
-    <div>
-        <a class="title" href="#">Projects</a>
-        <a class="title" href="#">About</a>
-        <a class="title" href="#">Test</a>
+    <div class="centered-header">
+        <div>Test Title</div>
+        <div class="button-align">
+            <a class="button is-ghost font-display" href="#">Home</a>
+            <a class="button is-ghost font-display" href="#">About</a>
+            <a class="button is-ghost font-display" href="#">Work</a>
+            <a class="button is-ghost font-display" href="#">Contact</a>
+        </div>
+        <div class="datetime">
+            <span id="clock"></span>
+            <span id="date"></span>
+            <span id="tz"></span>
+        </div>
     </div>
 </header>
+
 <body>
 </body>
 <footer>
@@ -57,3 +67,21 @@
 </footer>
 
 </html>
+
+<script>
+    function updateClock() {
+        const now = new Date();
+
+        document.getElementById('clock').textContent =
+            now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+        document.getElementById('date').textContent =
+            now.toLocaleDateString([], { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
+
+        document.getElementById('tz').textContent =
+            Intl.DateTimeFormat().resolvedOptions().timeZone;
+    }
+
+    updateClock();
+    setInterval(updateClock, 1000);
+</script>
