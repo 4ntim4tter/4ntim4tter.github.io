@@ -24,6 +24,14 @@ footer {
     font-size: x-large;
 }
 
+.icon-style {
+    margin-right: 5px;
+}
+
+.icon-style:hover {
+    text-decoration: none !important;
+}
+
 .datetime {
     display: flex;
     flex-direction: column;
