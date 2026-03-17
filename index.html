@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
 
 <head>
     <meta charset="utf-8">
@@ -43,20 +43,44 @@
     </script> -->
 </head>
 
-<header>
+<header class="header-styling" id="desktop-header">
     <div class="centered-header">
-        <div>Test Title</div>
+        <div class="page-title">
+            <div>Practically</div>
+            <div>Invisible</div>
+        </div>
         <div class="button-align">
             <a class="button is-ghost font-display" href="#">
                 <span class="fa fa-home icon-style"></span>Home</a>
-            <a class="button is-ghost font-display" href="#">About</a>
-            <a class="button is-ghost font-display" href="#">Work</a>
-            <a class="button is-ghost font-display" href="#">Contact</a>
+            <a class="button is-ghost font-display" href="#">
+                <span class="fa fa-male icon-style"></span>About</a>
+            <a class="button is-ghost font-display" href="#">
+                <span class="fa fa-gear icon-style"></span>Work</a>
+            <a class="button is-ghost font-display" href="#">
+                <span class="fa fa-envelope-o icon-style"></span>Contact</a>
         </div>
         <div class="datetime">
             <span id="clock"></span>
             <span id="date"></span>
             <span id="tz"></span>
+        </div>
+    </div>
+    <div class="mobile-menu">
+        <div>
+            <div class="page-title">Practically Invisible</div >
+            <button class="fa-solid fa-bars button is-ghost font-display"></button>
+            <div id="dropdown">
+                <li id="dropdown-content">
+                    <a class="button is-ghost font-display" href="#">
+                        <span class="fa fa-home icon-style"></span>Home</a>
+                    <a class="button is-ghost font-display" href="#">
+                        <span class="fa fa-male icon-style"></span>About</a>
+                    <a class="button is-ghost font-display" href="#">
+                        <span class="fa fa-gear icon-style"></span>Work</a>
+                    <a class="button is-ghost font-display" href="#">
+                        <span class="fa fa-envelope-o icon-style"></span>Contact</a>
+                </li>
+            </div>
         </div>
     </div>
 </header>

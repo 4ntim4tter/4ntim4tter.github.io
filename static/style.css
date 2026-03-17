@@ -14,6 +14,16 @@ footer {
     gap: 4px;
 }
 
+.header-styling {
+    border-bottom: 3px groove #7585ff;
+}
+
+.page-title {
+    font-size: x-large;
+    color: #7585ff;
+    padding-left: 5px;
+}
+
 .centered-header {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -34,6 +44,7 @@ footer {
 
 .datetime {
     display: flex;
+    color: #7585ff;
     flex-direction: column;
     align-items: flex-end;
     line-height: 1.5;
@@ -52,4 +63,29 @@ footer {
 .datetime .tz {
     font-size: 7px;
     color: #aaa;
+}
+
+.mobile-menu {
+    display:none;
+}
+
+@media (max-width:768px) {
+    .centered-header {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
 }
