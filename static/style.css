@@ -14,8 +14,18 @@ footer {
     gap: 4px;
 }
 
+.button-text-shadow {
+    text-shadow: 0px -5px 6px black;   
+}
+
+.title-shadow {
+    text-shadow: 0px -5px 6px black;
+}
+
 .header-styling {
-    border-bottom: 3px groove #7585ff;
+    background: linear-gradient(90deg,rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
 }
 
 .page-title {
@@ -28,6 +38,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     align-items: center;
+    padding-bottom: 15px;
 }
 
 .button {
@@ -67,6 +78,7 @@ footer {
 
 .mobile-menu {
     display:none;
+    padding-bottom: 10px;
 }
 
 @media (max-width:768px) {
@@ -88,4 +100,23 @@ footer {
         position: relative;
         display: inline-block;
     }
+}
+
+body {
+	background: linear-gradient(-45deg, #150d25, #0d1c31, #08242e, #083329);
+	background-size: 400% 400%;
+	animation: gradient 60s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
