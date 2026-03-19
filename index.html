@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/494efd07c9.js" crossorigin="anonymous"></script>
 
+    <script src="scripts.js"></script>
+
     <script src="https://unpkg.com/htmx.org@2.0.3"
         integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous">
         </script>
@@ -66,11 +68,11 @@
         </div>
     </div>
     <div class="mobile-menu">
-        <div>
+        <div >
             <div class="page-title button-text-shadow">Practically Invisible</div >
-            <button class="fa-solid fa-bars button is-ghost font-display button-text-shadow"></button>
-            <div id="dropdown">
-                <li id="dropdown-content">
+            <div class="dropdown">
+                <button class="menu-button fa-solid fa-bars button is-ghost font-display button-text-shadow"></button>
+                <li class="dropdown-content header-styling">
                     <a class="button is-ghost font-display button-text-shadow" href="#">
                         <div class="fa fa-home icon-style"></div>Home</a>
                     <a class="button is-ghost font-display button-text-shadow" href="#">
@@ -92,21 +94,3 @@
 </footer>
 
 </html>
-
-<script>
-    function updateClock() {
-        const now = new Date();
-
-        document.getElementById('clock').textContent =
-            now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-        document.getElementById('date').textContent =
-            now.toLocaleDateString([], { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' });
-
-        document.getElementById('tz').textContent =
-            Intl.DateTimeFormat().resolvedOptions().timeZone;
-    }
-
-    updateClock();
-    setInterval(updateClock, 1000);
-</script>
