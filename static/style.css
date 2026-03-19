@@ -20,7 +20,7 @@ footer {
 }
 
 .button-text-shadow {
-    text-shadow: 0px -5px 6px black;   
+    text-shadow: 0px -5px 6px black;
 }
 
 .title-shadow {
@@ -28,7 +28,7 @@ footer {
 }
 
 .header-styling {
-    background: linear-gradient(90deg,rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
+    background: linear-gradient(90deg, rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
     -webkit-mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
     mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
 }
@@ -82,7 +82,7 @@ footer {
 }
 
 .mobile-menu {
-    display:none;
+    display: none;
     padding-bottom: 10px;
 }
 
@@ -111,32 +111,35 @@ footer {
         position: sticky;
     }
 
-    .dropdown:hover .dropdown-content{
-        display: block;
+    .dropdown-styling {
+        background: linear-gradient(90deg, rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
+        -webkit-mask-image: linear-gradient(to bottom, #7585ff 90%, transparent 100%) !important;
+        mask-image: linear-gradient(to bottom, #7585ff 90%, transparent 100%) !important;
     }
 
-    .dropdown:hover .header-styling{
-        -webkit-mask-image: linear-gradient(to bottom, #7585ff 90%, transparent 100%);
-        mask-image: linear-gradient(to bottom, #7585ff 90%, transparent 100%);
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
 
 }
 
 body {
-	background: linear-gradient(-45deg, #150d25, #0d1c31, #08242e, #083329);
-	background-size: 400% 400%;
-	animation: gradient 60s ease infinite;
-	height: 100vh;
+    background: linear-gradient(-45deg, #150d25, #0d1c31, #08242e, #083329);
+    background-size: 400% 400%;
+    animation: gradient 60s ease infinite;
+    height: 100vh;
 }
 
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
