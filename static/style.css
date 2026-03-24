@@ -126,7 +126,7 @@ footer {
 html,
 body {
     background: linear-gradient(-45deg, #150d25, #0d1c31, #08242e, #083329);
-    background-size: 400% 400%;
+    background-attachment: fixed;
     animation: gradient 60s ease infinite;
     height: 100vh;
 }
