@@ -13,6 +13,11 @@ footer {
     text-decoration-line: none !important;
 }
 
+.font-style-title {
+    font-size: x-large;
+    color: #7585ff;
+}
+
 
 .button-align {
     display: flex;
@@ -31,6 +36,7 @@ footer {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 .page-title {
@@ -51,9 +57,21 @@ footer {
 .edge-transparency {
     height: 165px;
     width: 550px;
-    mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%), 
-    linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%),
+        linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
     mask-composite: intersect;
+}
+
+.center-page-content {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rounding-corners {
+    border-radius: 15px;
 }
 
 .button {
