@@ -48,12 +48,12 @@ footer {
     mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
 }
 
-.rounding-corners {
-    border: 2px inset #0d1c31;
-    border-radius: 15px;
-    width: 550px;
+.edge-transparency {
     height: 165px;
-    overflow: hidden;
+    width: 550px;
+    mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%), 
+    linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    mask-composite: intersect;
 }
 
 .button {
