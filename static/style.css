@@ -9,12 +9,18 @@ footer {
     font-style: normal;
 }
 
+.body-layout {
+    display: grid;
+    grid-template-rows:1fr auto;
+}
+
 .button {
     text-decoration-line: none !important;
 }
 
 .font-style-title {
     font-size: x-large;
+    text-align: center;
     color: #7585ff;
 }
 
@@ -56,7 +62,7 @@ footer {
 
 .edge-transparency {
     height: 165px;
-    width: 550px;
+    width: 206px;
     mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%),
         linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
     mask-composite: intersect;
@@ -68,6 +74,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .rounding-corners {
@@ -122,17 +129,11 @@ footer {
 .bobbing-text:hover {
     transform: translateY(-3px);
 }
-.footer-container {
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-}
 
 .footer-layout {
     font-size: xx-large; 
     padding-top: 20px;
     text-align: center;
-    grid-area: 2;
     background: linear-gradient(90deg, rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
     mask-image: linear-gradient(to top, #7585ff 60%, transparent 100%);
 }
