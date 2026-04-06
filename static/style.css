@@ -71,6 +71,11 @@ footer {
     mask-composite: intersect;
 }
 
+.image-size {
+    height: 240px;
+    width: 265px;
+}
+
 .center-page-content {
     margin-top: 100px;
     width: 100%;
