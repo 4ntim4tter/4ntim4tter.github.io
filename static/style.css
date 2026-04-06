@@ -105,6 +105,8 @@ footer {
     padding: 15px;
     
     margin-bottom: 20px;
+
+    overflow-x: hidden;
 }
 
 .rounding-corners {
