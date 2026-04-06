@@ -66,8 +66,6 @@ footer {
 }
 
 .edge-transparency {
-    height: 165px;
-    width: 206px;
     mask-image: linear-gradient(to bottom, transparent 0%, black 5%, black 95%, transparent 100%),
         linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
     mask-composite: intersect;
@@ -75,10 +73,33 @@ footer {
 
 .center-page-content {
     margin-top: 100px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.project-card {
+    background-color: #0d1c31;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 60%;
+
+    background: linear-gradient(90deg, #8952f7, #0d1c31, #08242e, #8952f7);
+    background-size: 300% 300%;
+    animation: gradient 60s;
+    animation-duration: infinite;
+
+    border: 3px inset #7585ff;
+    box-shadow: 5px 5px 20px 2px black;
+
+    padding: 15px;
+    
+    margin-bottom: 20px;
 }
 
 .rounding-corners {
@@ -180,25 +201,17 @@ footer {
     }
 }
 
-html,
-body {
-    background: linear-gradient(-45deg, #150d25, #0d1c31, #08242e, #083329);
-    background-attachment: fixed;
-    animation: gradient 60s ease infinite;
-    height: 100vh;
+html {
+    background: linear-gradient(180deg, #24183d, #152d4e, #0c3a4b, #180747);
+    background-position: fixed;
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+    animation-direction: alternate;
 }
 
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
