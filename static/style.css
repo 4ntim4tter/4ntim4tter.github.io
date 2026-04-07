@@ -88,7 +88,6 @@ img, iframe {
 }
 
 .image-size {
-    height: 240px;
     width: 265px;
     padding-bottom: 5px;
 }
@@ -201,6 +200,11 @@ img, iframe {
 
     .project-card {
         width: 80%;
+    }
+
+    .font-style-text {
+        font-size: large;
+        max-width: 90%;
     }
 
     .page-title {
