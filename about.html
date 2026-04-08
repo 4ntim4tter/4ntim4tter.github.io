@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>A.Jusic#Dev</title>
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/style.css" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/494efd07c9.js" crossorigin="anonymous"></script>
+
+    <script defer src="scripts.js"></script>
+
+    <script src="https://unpkg.com/htmx.org@2.0.3"
+        integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous">
+        </script>
+
+    <!--     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script type="text/javascript" defer>
+        function renderTurnstileWidget() {
+            // Get all elements with the class 'cf-turnstile'
+            const turnstileElements = document.querySelectorAll('.cf-turnstile');
+            // Loop through each Turnstile element
+            turnstileElements.forEach((element) => {
+                // Get the data attributes
+                const siteKey = element.dataset.sitekey;
+                const theme = element.dataset.theme;
+
+                // Render the Turnstile captcha
+                window.turnstile.render(element, {
+                    siteKey: siteKey,
+                    theme: theme
+                });
+            });
+        };
+        document.addEventListener('htmx:afterRequest', function (evt) {
+            renderTurnstileWidget();
+        });
+    </script> -->
+</head>
+
+<body class="body-layout" style="height: 100svh;">
+    <header class="header-styling" id="desktop-header">
+        <div class="centered-header">
+            <div class="button-align">
+                <a class="button is-ghost bobbing-text font-display button-text-shadow" href="index.html">
+                    <span class="fa fa-home icon-style"></span>Home</a>
+                <a class="button is-ghost bobbing-text font-display button-text-shadow" href="about.html">
+                    <span class="fa fa-male icon-style"></span>About</a>
+            </div>
+            <div class="page-title">
+                <h1 class="title-shadow" style="text-align: center;"> Dev and Creative
+                    <br> A.Jusic#Dev
+                </h1>
+            </div>
+            <div class="datetime button-text-shadow">
+                <span id="clock"></span>
+                <span id="date"></span>
+                <span id="tz"></span>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <h1 class="page-title button-text-shadow" style="text-align: center;"> Dev and Creative
+                <br> A.Jusic#Dev
+            </h1>
+            <div class="dropdown">
+                <button class="menu-button fa-solid fa-bars button is-ghost font-display button-text-shadow"></button>
+                <li class="dropdown-content dropdown-styling">
+                    <a class="button is-ghost font-display button-text-shadow" href="index.html">
+                        <div class="fa fa-home icon-style"></div>Home
+                    </a>
+                    <a class="button is-ghost font-display button-text-shadow" href="about.html">
+                        <div class="fa fa-male icon-style"></div>About
+                    </a>
+                </li>
+            </div>
+        </div>
+    </header>
+    <div class="center-page-content">
+        <div class="project-card rounding-corners">
+            <a href="" class="font-style-title title-shadow">
+                <h1>
+                    A few words...
+                </h1>
+            </a>
+            <p class="font-style-text">
+                Hey, so I'm supposed to explain and justify why this section exists, huh?
+                <br>
+                Listen, this section is really not something I'm good at... talking about myself physically hurts me.
+                <br>
+                What's the point of this I'm just a guy jumping around different interest like creating games, developing websites and android applications, creating pixel art, learning how to draw and paint... and getting run over by a crippling imposter syndrome.
+                <br>
+                Yeah, nothing to see here move along... or tell me a story, my contacts are at the bottom there.
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-layout" title="Contact and Socials">
+            <a href="https://github.com/4ntim4tter" target="_blank"
+                class="fa fa-github bobbing-text button-text-shadow"></a>
+            <a href="https://www.linkedin.com/in/anes-jusic-tdev" target="_blank"
+                class="fa fa-linkedin bobbing-text button-text-shadow"></a>
+            <a href="https://bsky.app/profile/antimatter87.bsky.social" target="_blank"
+                class="fa-brands fa-bluesky bobbing-text button-text-shadow"></a>
+            <a href="https://antimatter87.itch.io/" target="_blank"
+                class="fa-brands fa-itch-io bobbing-text button-text-shadow"></a>
+            <a href="mailto:jusic.anes87@gmail.com" target="_blank"
+                class="fa fa-envelope-o bobbing-text button-text-shadow"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
