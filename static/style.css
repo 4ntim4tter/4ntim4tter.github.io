@@ -99,10 +99,20 @@ img, iframe {
 .center-page-content {
     margin-top: 100px;
     width: 100%;
+    display: grid;
+    grid-template-columns: 10% 1fr 10%;
+}
+
+.grid-left {
+    grid-column: 1;
+}
+
+.grid-middle {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    grid-column: 2;
 }
 
 .project-card {
@@ -196,10 +206,14 @@ img, iframe {
         display: none;
     }
 
+    .center-page-content {
+    grid-template-columns: auto 1fr auto;
+    }
+
     .mobile-menu {
         display: block;
         background: linear-gradient(90deg, rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
-        mask-image: linear-gradient(to bottom, #7585ff 60%, transparent 100%);
+        mask-image: linear-gradient(to bottom, #7585ff 74%, transparent 100%);
     }
 
     .project-card {
