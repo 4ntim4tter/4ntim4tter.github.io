@@ -78,7 +78,7 @@ img, iframe {
     align-items: center;
     padding-bottom: 15px;
     background: linear-gradient(90deg, rgba(29, 28, 66, 1) 0%, rgba(47, 47, 135, 1) 50%, rgba(29, 28, 66, 1) 100%);
-    mask-image: linear-gradient(to bottom, #7585ff 74%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #7585ff 85%, transparent 100%);
 }
 
 .edge-transparency {
@@ -256,7 +256,7 @@ html {
     background: linear-gradient(180deg, #24183d, #152d4e, #0c3a4b, #180747);
     background-position: fixed;
     background-size: 400% 400%;
-    animation: gradient 45s ease infinite;
+    animation: gradient 15s ease infinite;
     animation-direction: alternate;
 }
 
