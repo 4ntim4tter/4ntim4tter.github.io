@@ -9,6 +9,53 @@ footer {
     font-style: normal;
 }
 
+.background-html {
+    position:relative;
+    background-image: radial-gradient(#42345f 15%, 
+    #0c0452 30%, 
+    #3a4c8a 45%, 
+    #260c5c 60%, 
+    #00093d 75%, 
+    #42345f 90%);
+    background-size: 800% 200%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    animation: water-bg 10s ease-in-out infinite alternate-reverse;
+}
+
+.background-html::after {
+    content: "";
+    position: fixed;
+    background-image: repeating-linear-gradient(90deg, lightgray, #5b4783, lightgray, #5b4783, #5b4783 90px);
+    background-size: 200% 100%;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    border: 16px;
+    border-style: dashed;
+    border-color: lightgray;
+    z-index: -1;
+    height: 100px;
+    width: 120%;
+    top: 650px;
+    left: -100px;
+    filter: blur(8px);
+    animation: border-move 120s linear infinite alternate;
+}
+
+.background-html::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    background-image: url(city-bg.png), linear-gradient(to bottom, #060025  696px, transparent 696px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    filter: blur(6px);
+}
+
 img,
 iframe {
     border: 2px;
@@ -259,7 +306,7 @@ iframe {
 
     .center-page-content {
         grid-template-columns: auto 1fr auto;
-        margin-top: 25%;
+        margin-top: 30%;
     }
 
     .mobile-menu {
@@ -300,6 +347,12 @@ iframe {
 
 }
 
+@media (max-width: 420px) {
+    .center-page-content {
+        margin-top: 40%;
+    }
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -321,5 +374,14 @@ iframe {
 
     100% {
         background-position: 100% 0%;
+    }
+}
+
+@keyframes water-bg {
+    from {
+        background-position: 0, 0%;
+    }
+    to {
+        background-position: 100%, 50%;
     }
 }
